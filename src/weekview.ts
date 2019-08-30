@@ -10,7 +10,7 @@ import { IDisplayAllDayEvent } from "./calendar";
 @Component({
     selector: 'weekview',
     template: `
-        <ion-slides #weekSlider [loop]="true" [dir]="dir" [spaceBetween]="spaceBetween" (ionSlideDidChange)="onSlideChanged()">
+        <ion-slides #weekSlider [loop]="true" [dir]="dir" [spaceBetween]="spaceBetween" (ionSlideTransitionStart)="onSlideChanged()">
             <ion-slide>
                 <table class="table table-bordered table-fixed weekview-header">
                     <thead>
