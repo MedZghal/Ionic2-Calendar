@@ -19,8 +19,7 @@
         "build-prod": "rm -rf aot && node_modules/.bin/ngc -p tsconfig-aot.json && node_modules/.bin/ngc src && mv src/*ngfactory.ts aot && rm -r aot/waste && rm -r src/*.ngsummary.json",
         "copy_static_files": "cp -r package.json README.md LICENSE tsconfig.json typings.json typings dist/",
         "copy_static_files_prod": "cp -r package.json README.md LICENSE tsconfig.json typings.json typings aot/",
-        "dev": "tsc --watch",
-        "postinstall": "typings install"
+        "dev": "tsc --watch"
     },
     "main": "./index.js",
     "dependencies": {},
